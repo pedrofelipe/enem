@@ -1,0 +1,1059 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Enem 2012 - Corrija o gabarito e descubra o seu desempenho!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<!-- Header -->
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+				<h1>Enem 2012</h1>
+				<p class="muted">Corrija o gabarito e descubra o seu desempenho!</p>
+			</div><!--/.span5 -->
+			<div class="span7">
+				<div class="alert alert-info alert-block">
+					<strong>Atenção!</strong> Você acertou <span id="acertos">0</span> e errou <span id="erros">0</span> questões.<br/>
+					Porcentagem de acertos: <span id="media">0</span>%
+				</div>
+			</div><!--/.span7 -->
+		</div><!--/.row -->
+	</div><!--/.container -->
+</header>
+<!-- Content -->
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<hr />
+			<table>
+				<tr>
+					<td class="tdmargin">
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button type="button" data-option="day" data-value="1" class="btn btn-large day">1º dia</button>
+							<button type="button" data-option="day" data-value="2" class="btn btn-large">2º dia</button>
+						</div>
+					</td>
+					<td class="tdmargin">
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button type="button" id="color_0" data-option="color" data-value="0" class="btn btn-large color">Rosa</button>
+							<button type="button" id="color_1" data-option="color" data-value="1" class="btn btn-large">Azul</button>
+							<button type="button" id="color_2" data-option="color" data-value="2" class="btn btn-large">Amarela</button>
+							<button type="button" id="color_3" data-option="color" data-value="3" class="btn btn-large">Branca</button>
+						</div>
+					</td>
+					<td id="lang" class="hide">
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button type="button" data-option="lang" data-value="0" class="btn btn-large active">Inglês</button>
+							<button type="button" data-option="lang" data-value="1" class="btn btn-large">Espanhol</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<br /><br />
+			<table class="table table-striped" data-option="gabarito">
+				<tbody>
+					<tr>
+						<td class="line">1</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">31</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">61</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">2</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">32</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">62</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">3</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">33</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">63</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">4</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">34</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">64</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">5</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">35</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">65</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">6</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">36</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">66</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">7</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">37</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">67</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">8</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">38</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">68</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">9</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">39</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">69</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">10</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">40</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">70</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">11</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">41</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">71</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">12</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">42</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">72</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">13</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">43</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">73</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">14</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">44</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">74</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">15</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">45</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">75</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">16</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">46</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">76</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">17</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">47</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">77</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">18</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">48</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">78</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">19</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">49</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">79</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">20</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">50</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">80</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">21</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">51</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">81</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">22</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">52</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">82</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">23</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">53</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">83</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">24</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">54</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">84</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">25</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">55</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">85</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">26</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">56</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">86</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">27</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">57</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">87</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">28</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">58</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">88</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">29</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">59</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">89</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">30</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">60</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+						<td class="line">90</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" value="A">A</button>
+								<button type="button" class="btn" value="B">B</button>
+								<button type="button" class="btn" value="C">C</button>
+								<button type="button" class="btn" value="D">D</button>
+								<button type="button" class="btn" value="E">E</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="span12">
+			<hr class="less" />
+		</div>
+		<div class="span6">
+			<p class="muted">Desenvolvido por <a href="http://www.pedrofelipe.com.br" target="_blank">Pedro Felipe</a> e Igor Lira.</p>
+		</div>
+		<div class="span6">
+			<p class="muted pull-right"><a href="http://veja.abril.com.br/noticia/educacao/enem-2012-confira-o-gabarito-do-primeiro-dia-de-provas" target="_blank" rel="nofollow">Fonte do gabarito não oficial do 1º dia</a><br />
+			<a href="http://veja.abril.com.br/noticia/educacao/enem-2012-confira-o-gabarito-do-segundo-dia-de-provas" target="_blank" rel="nofollow">Fonte do gabarito não oficial do 2º dia</a></p>
+		</div>
+	</div><!--/.row -->
+</div><!--/.container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/enem.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25253949-1']);
+  _gaq.push(['_setDomainName', 'pedrofelipe.com.br']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
