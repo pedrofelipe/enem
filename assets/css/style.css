@@ -26,6 +26,7 @@ button.btn.btn-success, button.btn.btn-danger { color: #fff; }
 
 h1, h2, h3, b, th, strong { font-weight: 600; }
 p { font-weight: 400; }
+h4 { padding-bottom: 3px; }
 
 a { color: #666; }
 a:hover, a:active, a:focus { color: #666; text-decoration: underline; }
